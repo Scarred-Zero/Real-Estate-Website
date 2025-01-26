@@ -1,0 +1,34 @@
+.footer__wrapper{
+    margin-bottom: 4rem;
+}
+
+.footer__container {
+    justify-content: space-between;
+    padding: 0 4rem;
+}
+
+.footer__left {
+    gap: 1rem;
+}
+
+.footer__menu {
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .footer__container > div {
+        align-items: center !important;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer__container {
+        padding: 0 2rem;
+    }
+    .footer__left, .footer__right {
+        width: 100%;
+    }
+}

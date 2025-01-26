@@ -1,0 +1,11 @@
+.companies__wrapper {
+    margin: 4rem 0;
+}
+
+.companies__container {
+    justify-content: space-evenly;
+}
+
+.companies__container > img {
+    width: 9rem;
+}

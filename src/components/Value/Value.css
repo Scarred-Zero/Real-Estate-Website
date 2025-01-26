@@ -1,0 +1,132 @@
+.value__wrapper {
+    margin: 4rem 0;
+}
+
+.value__container {
+    padding: 0 4rem;
+}
+
+.value__container .img__container {
+    border: 8px solid rgb(232, 232, 232 / 93%);
+}
+
+.value__container > div {
+    flex: 1;
+}
+
+.value__right {
+    gap: 0.5rem; 
+    position: relative
+}
+
+.accordion {
+    margin-top: 2rem;
+    border: none;
+}
+
+.accordion__item {
+    background: white;
+    border: .8px solid rgba(128, 128, 128, 0.143);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.accordion__item.expanded {
+    box-shadow: var(--shadow);
+    border-radius: 6px;
+}
+
+.accordion__btn {
+    background: white;
+    padding: 1rem;
+    width: 100%;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.accordion__btn .primaryText {
+    font-size: 1.1rem;
+}
+
+.icon {
+    padding: 10px;
+    background: #EEEEFF;
+    border-radius: 5px;
+}
+
+.icon svg {
+    fill: var(--blue);
+}
+
+@media (max-width: 1024px) {
+    .value__container {
+        flex-direction: column;
+    }
+    .value__right > span:nth-child(1)  {
+        position: absolute;
+        top: -47rem;
+    }
+    .value__right > span:nth-child(2)  {
+        position: absolute;
+        top: -45rem;
+    }
+    .value__right > span:nth-child(3)  {
+        position: absolute;
+        top: -41.7rem;
+    }
+    .value__left {
+        margin-top: 9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .accordion__btn .primaryText {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .value__container {
+        padding: 0 2rem;
+    }
+    .value__right > span:nth-child(1)  {
+        position: absolute;
+        top: -36rem;
+    }
+    .value__right > span:nth-child(2)  {
+        position: absolute;
+        top: -34rem;
+    }
+    .value__right > span:nth-child(3)  {
+        position: absolute;
+        top: -32rem;
+    }
+}
+
+@media (max-width: 365px) {
+    .accordion__btn {
+        padding: .5rem;
+    }
+    .accordion__btn .primaryText {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 348px) {
+    .accordion__btn {
+        padding: .4rem;
+    }
+    .accordion__btn .primaryText {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 335px) {
+    .accordion__btn .primaryText {
+        font-size: 0.7rem;
+    }    
+    .icon {
+        padding: 5px;
+    }
+}

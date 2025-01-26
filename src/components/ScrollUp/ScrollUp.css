@@ -1,0 +1,30 @@
+.scrollup {
+    position: fixed;
+    right: 2.5rem;
+    bottom: -20%;
+    background-color: var(--burnt-orange);
+    opacity: .9;
+    padding: 1rem 1.5rem;
+    border-radius: 15px;
+    z-index: var(--z-tooltip);
+    transition: .4s ease-in-out;
+}
+
+.scrollup__icon {
+    font-size: 1.5rem;
+    color: var(--container-color);
+}
+
+.scrollup:hover {
+    background-color: orange;
+}
+
+.show-scroll {
+    bottom: 7rem;
+}
+
+@media (max-width: 390px) {
+    .show-scroll {
+        bottom: 3rem;
+    }
+}
